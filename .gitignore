@@ -221,4 +221,5 @@ data/train/
 data/val/
 *.onnx
 *.tar.gz
+*.parquet
 hhc/
