@@ -1,7 +1,7 @@
 # BPC
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21022946.svg)](https://doi.org/10.5281/zenodo.21022946) ![GitHub License](https://img.shields.io/github/license/pinto0309/BPC) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/PINTO0309/bpc)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21022946.svg)](https://doi.org/10.5281/zenodo.21022946) ![GitHub License](https://img.shields.io/github/license/PINTO0309/BPC) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/PINTO0309/bpc)
 
-Background Plain classification. 48x48.
+Binary classification of whether the background is simple or complex. 48x48.
 
 https://github.com/user-attachments/assets/bfeebfaa-3aec-429a-9f2a-f16ff2d0d907
 
@@ -30,6 +30,12 @@ source .venv/bin/activate
 ```
 
 <img width="600" alt="dataset_class_ratio" src="https://github.com/user-attachments/assets/9395934a-6920-4e14-9dc5-037ca36d9109" />
+
+## Data sample
+
+|1|2|3|4|5|6|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|<img width="48" height="48" alt="plain_000001" src="https://github.com/user-attachments/assets/d73b6bac-4aa5-4352-9f03-093b4f911f14" />|<img width="48" height="48" alt="plain_000005" src="https://github.com/user-attachments/assets/dda398cf-01b9-4d23-9dd0-315136a0d9f1" />|<img width="48" height="48" alt="plain_000008" src="https://github.com/user-attachments/assets/5b040a08-823d-4b7c-9f80-f1503d307094" />|<img width="48" height="48" alt="not_plain_000004" src="https://github.com/user-attachments/assets/a6027eeb-288e-487b-af6e-9fc6029c0955" />|<img width="48" height="48" alt="wearing_hat_100021" src="https://github.com/user-attachments/assets/f55c0c03-1604-4b19-86f9-7d9e5e961160" />|<img width="48" height="48" alt="not_plain_000000" src="https://github.com/user-attachments/assets/e440886b-f972-4e3b-845c-dbd2db09c225" />|
 
 ## Demo
 
@@ -209,7 +215,7 @@ interact with smartphones](https://github.com/PINTO0309/PUC) - MIT License
 9. [MWC: Mask wearing classifier.](https://github.com/PINTO0309/MWC) - MIT License
 10. [SGC: Classification of wearing vs. not wearing sunglasses. 48x48.](https://github.com/PINTO0309/SGC) - MIT License
 11. [HHC: Head Hat Classification. HHC is a binary classifier for cropped head images. 48x48.](https://github.com/PINTO0309/HHC) - MIT License
-12. [BPC: Background Plain classification. 48x48.](https://github.com/PINTO0309/BPC) - MIT License
+12. [BPC: Binary classification of whether the background is simple or complex. 48x48.](https://github.com/PINTO0309/BPC) - MIT License
 
 ## Citation
 
@@ -224,6 +230,6 @@ If you find this project useful, please consider citing:
   publisher = {Zenodo},
   doi       = {10.5281/zenodo.21022946},
   url       = {https://github.com/PINTO0309/bpc},
-  abstract  = {Background Plain classification. 48x48.},
+  abstract  = {Binary classification of whether the background is simple or complex. 48x48.},
 }
 ```
