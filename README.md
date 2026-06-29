@@ -1,5 +1,5 @@
 # BPC
-Background Plain classification.
+Background Plain classification. 48x48.
 
 ## Demo
 
