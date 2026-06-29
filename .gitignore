@@ -222,4 +222,5 @@ data/val/
 *.onnx
 *.tar.gz
 *.parquet
+*.mp4
 hhc/
