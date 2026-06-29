@@ -1,6 +1,60 @@
 # BPC
 Background Plain classification.
 
+## Demo
+
+The demo script needs a YOLO whole-body detector ONNX/TFLite model and an bpc hat classifier ONNX model.
+Place the detector model in the repository root, or pass its path with `--model`.
+Use the ONNX file exported by training for `--bpc_model`.
+
+```bash
+uv run python demo_bpc.py \
+--model yolomit_t_wholebody28_1x3x480x640.onnx \
+--bpc_model bpc_is_l_48x48.onnx \
+--images_dir path/to/images \
+--execution_provider cpu \
+--disable_waitKey
+```
+
+For a video file:
+
+```bash
+uv run python demo_bpc.py \
+--model yolomit_t_wholebody28_1x3x480x640.onnx \
+--bpc_model bpc_is_l_48x48.onnx \
+--video path/to/video.mp4 \
+--execution_provider cpu
+```
+
+For a camera:
+
+```bash
+uv run python demo_bpc.py \
+--model yolomit_t_wholebody28_1x3x480x640.onnx \
+--bpc_model bpc_is_l_48x48.onnx \
+--video 0 \
+--execution_provider cpu \
+--disable_generation_identification_mode \
+--disable_gender_identification_mode \
+--disable_left_and_right_hand_identification_mode \
+--disable_headpose_identification_mode
+```
+```bash
+uv run python demo_bpc.py \
+--model yolomit_t_wholebody28_1x3x480x640.onnx \
+--bpc_model bpc_is_l_48x48.onnx \
+--video 0 \
+--execution_provider cuda \
+--disable_generation_identification_mode \
+--disable_gender_identification_mode \
+--disable_left_and_right_hand_identification_mode \
+--disable_headpose_identification_mode
+```
+
+Processed still images are saved under `output/`.
+Video input is also recorded to `output.mp4` by default; add `--disable_video_writer` to skip recording.
+Use `--execution_provider cuda` or `--execution_provider tensorrt` when the required ONNXRuntime GPU/TensorRT environment is available.
+
 ## Train
 
 ```bash
