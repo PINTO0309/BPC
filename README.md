@@ -31,6 +31,12 @@ source .venv/bin/activate
 
 <img width="600" alt="dataset_class_ratio" src="https://github.com/user-attachments/assets/9395934a-6920-4e14-9dc5-037ca36d9109" />
 
+## Data sample
+
+|1|2|3|4|5|6|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|<img width="48" height="48" alt="plain_000001" src="https://github.com/user-attachments/assets/d73b6bac-4aa5-4352-9f03-093b4f911f14" />|<img width="48" height="48" alt="plain_000005" src="https://github.com/user-attachments/assets/dda398cf-01b9-4d23-9dd0-315136a0d9f1" />|<img width="48" height="48" alt="plain_000008" src="https://github.com/user-attachments/assets/5b040a08-823d-4b7c-9f80-f1503d307094" />|<img width="48" height="48" alt="not_plain_000004" src="https://github.com/user-attachments/assets/a6027eeb-288e-487b-af6e-9fc6029c0955" />|<img width="48" height="48" alt="wearing_hat_100021" src="https://github.com/user-attachments/assets/f55c0c03-1604-4b19-86f9-7d9e5e961160" />|<img width="48" height="48" alt="not_plain_000000" src="https://github.com/user-attachments/assets/e440886b-f972-4e3b-845c-dbd2db09c225" />|
+
 ## Demo
 
 The demo script needs a YOLO whole-body detector ONNX/TFLite model and an bpc hat classifier ONNX model.
