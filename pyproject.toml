@@ -3,7 +3,7 @@ name = "bpc"
 version = "1.0.0"
 description = "Background plain classification."
 readme = "README.md"
-requires-python = ">=3.10,<3.13"
+requires-python = "==3.12.*"
 dependencies = [
     "matplotlib==3.10.7",
     "numpy==1.26.4",
@@ -21,11 +21,8 @@ onnx = [
     "onnx==1.19.0",
     "onnxsim-prebuilt==0.4.39.post2",
 ]
-demo = [
-    "onnxruntime==1.23.0",
-]
 demo-gpu = [
-    "onnxruntime-gpu==1.23.0",
+    "onnxruntime-gpu==1.26.0",
 ]
 logging = [
     "tensorboard==2.17.1",
